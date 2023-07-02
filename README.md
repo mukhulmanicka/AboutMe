@@ -10,4 +10,4 @@ https://docs.emmet.io/cheat-sheet/
 
 https://www.jetbrains.com/help/webstorm/settings-emmet.html
 
-Publishing Version 1 Tomorrow
+Published Version 0.1
