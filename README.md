@@ -11,4 +11,4 @@ https://www.jetbrains.com/help/webstorm/settings-emmet.html
 
 Published Version 0.1
 
-Publishing Version 0.2 tomorrow
+Published Version 0.2
