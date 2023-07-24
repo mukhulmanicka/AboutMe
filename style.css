@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Horizontal Navigation Bar */
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #363636;
+}
+
+.navItem {
+    height: 55px;
+    padding: 0 2rem 0 2rem;
+    text-decoration: none;
+    align-items: center;
+    font-size: 24px;
+    display: flex;
+    color: beige;
+}
+
+.navItem:hover {
+    background-color: deepskyblue;
+    color: #363636;
+}
+
+/* Header */
+
+header {
+    background-image: url("images/sci-fi background.jpeg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: auto;
+}
+
+/* Text */
+
+.name {
+    text-align: center;
+    margin: 5rem;
+    color: white;
+}
+
+body {
+    background-image: linear-gradient(mediumpurple, rebeccapurple);
+}
+
+.about-header {
+    margin: 20px;
+    text-align: center;
+}
+
+.about {
+    height: 100vh;
+    margin: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-picture {
+    align-content: flex-start;
+    padding: 25px;
+}
+
+.portfolio {
+    text-align: center;
+}
+
+.portfolio-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-flex-item {
+    flex: 1 0 33%;
+    box-sizing: border-box;
+    padding: 2.5rem;
+}
+
+.contacts {
+    height: 15vh;
+    text-align: center;
+}
+
+/* Horizontal Footer Bar */
+
+footer {
+    background-color: #363636;
+    text-align: center;
+    color: white;
+    height: 2.5rem;
+    margin-top: auto;
+    padding: 2.5rem;
+}
