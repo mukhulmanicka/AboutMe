@@ -38,3 +38,59 @@
         document.body.classList.toggle('light-mode');
     });
 })();
+
+document.addEventListener("DOMContentLoaded", () => {
+    const slides = document.querySelectorAll(".carousel-slide");
+    const prevButton = document.querySelector(".carousel-button.prev");
+    const nextButton = document.querySelector(".carousel-button.next");
+    const fullscreenOverlay = document.querySelector(".fullscreen-overlay");
+    const fullscreenImage = document.querySelector(".fullscreen-image");
+    const closeFullscreenButton = document.querySelector(".close-fullscreen");
+    let currentSlide = 0;
+
+    const updateSlide = () => {
+        slides.forEach((slide, index) => {
+            slide.classList.toggle("active", index === currentSlide);
+        });
+
+        // Dynamic button visibility
+        prevButton.classList.toggle("hidden", currentSlide === 0);
+        nextButton.classList.toggle("hidden", currentSlide === slides.length - 1);
+    };
+
+    const openFullscreen = (src) => {
+        fullscreenImage.src = src;
+        fullscreenOverlay.classList.add("visible");
+    };
+
+    const closeFullscreen = () => {
+        fullscreenOverlay.classList.remove("visible");
+    };
+
+    prevButton.addEventListener("click", () => {
+        if (currentSlide > 0) currentSlide--;
+        updateSlide();
+    });
+
+    nextButton.addEventListener("click", () => {
+        if (currentSlide < slides.length - 1) currentSlide++;
+        updateSlide();
+    });
+
+    slides.forEach((slide) => {
+        const img = slide.querySelector("img");
+        img.addEventListener("click", () => openFullscreen(img.src));
+    });
+
+    closeFullscreenButton.addEventListener("click", closeFullscreen);
+
+    // Close fullscreen on overlay click
+    fullscreenOverlay.addEventListener("click", (e) => {
+        if (e.target === fullscreenOverlay || e.target === closeFullscreenButton) {
+            closeFullscreen();
+        }
+    });
+
+    // Initialize the carousel
+    updateSlide();
+});
