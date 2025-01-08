@@ -1,17 +1,41 @@
-# AboutMe
----
-## My online portfolio
-Want to create a tab for useful information I will need
+# Personal Portfolio Website
 
-https://www.desuvit.com/11-vscode-keyboard-shortcuts-that-will-boost-your-productivity/
+Welcome to my personal portfolio website! This project showcases my skills, experience, and projects while serving as a platform to connect with potential collaborators and employers.
 
-https://docs.emmet.io/cheat-sheet/
+![Portfolio Screenshot](images/portfolio-screenshot.jpg)
 
-https://www.jetbrains.com/help/webstorm/settings-emmet.html
+## 🌟 Features
+- **Responsive Design**: Mobile-first approach ensures optimal viewing across all devices.
+- **Dynamic Sections**:
+    - **Image Carousel**: Showcases a dynamic timeline with fullscreen image functionality.
+    - **Resume Section**: Easily accessible download link for my resume.
+    - **Project Portfolio**: Highlights some of my favorite projects.
+    - **Contact Section**: Get in touch with me via email or social platforms.
+- **Dark/Light Mode**: Toggle between themes effortlessly.
 
-Published Version 0.1
+## 🚀 Technologies Used
+- **HTML5**: Semantic and accessible markup.
+- **CSS3**: Custom styling with transitions, animations, and responsive media queries.
+- **JavaScript**: Dynamic functionality like the image carousel and fullscreen view.
+- **Font Awesome**: Icons for navigation and buttons.
 
-Published Version 0.2
+## 📁 Project Structure
+```plaintext
+📦 Portfolio Website  
+├── index.html        # Main HTML file  
+├── styles.css        # Styling for the website  
+├── script.js         # JavaScript functionality  
+├── images/           # Image assets  
+├── resume.pdf        # Downloadable resume file  
+└── README.md         # Project documentation  
+```
+## ✨ How to Run Locally
+1. Clone this repository
+```plaintext
+git clone https://github.com/mukhulmanicka/aboutme.git  
+cd aboutme
+```
+2. Open index.html in your preferred browser.
 
-Portfolio Version 2.0:
-Fully functional website containing all necessary information
+## 🙌 Connect With Me
+
